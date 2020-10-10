@@ -1,16 +1,30 @@
 import React, {Component, useState} from "react";
 import '../styles/App.css';
 
-class App extends Component {
-    render() {
+// import React from "react";
+// import "./styles.css";
 
-        return(
-           <>
-//write your code here
-	</>
-        )
-    }
+export default function App() {
+  const vacationPlace = [
+    { country: "India", city: "Goa" },
+    { country: "Netherlands", city: "Amsterdam" },
+    { country: "USA", city: "New York" },
+    { country: "India", city: "Darjeeling" },
+    { country: "Japan", city: "Tokyo" },
+    { country: "India", city: "Lonavala" }
+  ];
+  //const [topList, setTopList] = React.useState(vacationPlace);
+
+  const tempList = vacationPlace.filter((place) => place.country === "India");
+  //setTopList(tempList);
+  return (
+    <div className="App">
+      <h1>Holiday List India</h1>
+      <ol>
+        {tempList.map((place, index) => (
+          <li key={`location` + (index + 1)}>{place.city}</li>
+        ))}
+      </ol>
+    </div>
+  );
 }
-
-
-export default App;
