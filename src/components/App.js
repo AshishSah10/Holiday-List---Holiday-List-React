@@ -5,12 +5,6 @@ import React, { Component, useState } from "react";
 // import "./styles.css";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      country: "India"
-    };
-  }
   vacationPlace = [
     { country: "India", city: "Goa" },
     { country: "Netherlands", city: "Amsterdam" },
