@@ -15,7 +15,7 @@ class App extends Component {
   ];
   //const [topList, setTopList] = React.useState(vacationPlace);
 
-  tempList = this.vacationPlace.filter((place) => place.country === "India");
+  tempList = ["Goa", "Darjeeling", "Lonavala"]; //this.vacationPlace.filter((place) => place.country === "India");
   //setTopList(tempList);
   render() {
     return (
