@@ -1,11 +1,11 @@
 import React, { Component, useState } from "react";
-import "../styles/App.css";
+// import "../styles/App.css";
 
 // import React from "react";
 // import "./styles.css";
 
 class App extends Component {
-  constructor(pros) {
+  constructor(props) {
     super(props);
     this.state = {
       country: "India"
@@ -21,9 +21,7 @@ class App extends Component {
   ];
   //const [topList, setTopList] = React.useState(vacationPlace);
 
-  tempList = this.vacationPlace.filter(
-    (place) => place.country === this.state.country
-  );
+  tempList = this.vacationPlace.filter((place) => place.country === "India");
   //setTopList(tempList);
   render() {
     return (
@@ -38,3 +36,4 @@ class App extends Component {
     );
   }
 }
+export default App;
