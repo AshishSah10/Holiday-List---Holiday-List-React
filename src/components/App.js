@@ -29,7 +29,7 @@ class App extends Component {
         <h1>Holiday List India</h1>
         <ol>
           {this.tempList.map((place, index) => (
-            <li key={`location$(index + 1)`}>{place.city}</li>
+            <li key={`location${index + 1}`}>{place.city}</li>
           ))}
         </ol>
       </div>
